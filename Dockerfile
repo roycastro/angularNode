@@ -1,13 +1,11 @@
-FROM node:7
+FROM mhart/alpine-node:8
 
-# Create app directory
-WORKDIR /home/node/app
+WORKDIR /app
+COPY . .
 
-# Install app dependencies
-COPY package.json .
-# For npm@5 or later, copy package-lock.json as well
-# COPY package.json package-lock.json ./
+# If you have native dependencies, you'll need extra tools
+# RUN apk add --no-cache make gcc g++ python
 
-RUN npm install
+RUN npm install 
 
-EXPOSE 8080
+EXPOSE 3000
