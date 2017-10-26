@@ -10,4 +10,5 @@ RUN npm install
 
 EXPOSE 3000
 RUN npm install -g @angular/cli
-RUN npm start
+RUN /bin/ash
+VOLUME /app/src
