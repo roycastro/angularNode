@@ -8,7 +8,8 @@ COPY . .
 RUN npm install sails -g
 RUN npm install 
 
-EXPOSE 3000
+EXPOSE 4200 49153
 RUN npm install -g @angular/cli
-RUN /bin/ash
 VOLUME /app/src
+RUN /bin/ash
+
