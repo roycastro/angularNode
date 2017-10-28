@@ -11,5 +11,5 @@ RUN npm install
 EXPOSE 4200 49153
 RUN npm install -g @angular/cli
 VOLUME /app/src
-RUN /bin/ash
+CMD [ "npm", "start" ]
 
