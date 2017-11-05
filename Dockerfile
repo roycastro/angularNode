@@ -13,6 +13,7 @@ RUN npm install -g @angular/cli
 RUN npm i angular4-slimscroll --save
 RUN npm install ng2-track-scroll --save
 RUN npm install ngc-float-button --save
+RUN npm install --save google-closure-compiler
 
 VOLUME /app/src
 CMD [ "npm", "start" ]
