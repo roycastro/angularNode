@@ -10,6 +10,9 @@ RUN npm install
 
 EXPOSE 4200 49153
 RUN npm install -g @angular/cli
+RUN npm i angular4-slimscroll --save
+RUN npm install ng2-track-scroll --save
+
 VOLUME /app/src
 CMD [ "npm", "start" ]
 
